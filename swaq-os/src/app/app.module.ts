@@ -33,12 +33,12 @@ import { AppRoutingModule } from './/app-routing.module';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: '', component: AppComponent},
-      {path: '', component: SplashScreenComponent},
-      {path: '', component: LoginPortalComponent},
-      {path: '', component: PortalSessionComponent},
-      {path: '', component: LockScreenComponent},
-      {path: '', component: ActiavtionPortalComponent},
-      {path: '', component: ResetPasswordPortalComponent},
+      {path: 'splash', component: SplashScreenComponent},
+      {path: 'portal', component: PortalSessionComponent},
+      {path: 'login-portal', component: LoginPortalComponent},
+      {path: 'lock-screen', component: LockScreenComponent},
+      {path: 'actiave-account', component: ActiavtionPortalComponent},
+      {path: 'reset-password', component: ResetPasswordPortalComponent},
 
 
 

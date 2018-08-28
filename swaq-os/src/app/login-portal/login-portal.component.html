@@ -16,11 +16,8 @@
     <mat-grid-list cols="2" rowHeight="2:1">
 
         <mat-grid-tile colspan="1" rowspan="1">
-<<<<<<< HEAD
-            <p id="para" routerLink="reset"> Forget Password</p>
-=======
-            <p id="para"><a  (click)="onClickForget()" id="Forget"> Forget Password </a></p>
->>>>>>> 680722fe83cac2fcbaf1595d328a474ff3179b86
+           
+            <p id="para"><a  routerLink="/reset-password" id="Forget"> Forget Password </a></p>
         </mat-grid-tile>
 
         <mat-grid-tile colspan="1" rowspan="1">
@@ -38,8 +35,8 @@
      
 
     <mat-grid-tile-footer rowspan="1">
-        <p class="textcenter mt-4"><a [routerLink]="activate"> Member ? Activate with token ID </a> </p>
-        <p class="textcenter mt-4"><a  (click)="onClickAct()" id="Activate"> Member ? Activate with token ID </a> </p>
+       
+        <p class="textcenter mt-4"><a  routerLink="/actiave-account" id="Activate"> New Member? Activate with token ID </a> </p>
       
     </mat-grid-tile-footer>
     
