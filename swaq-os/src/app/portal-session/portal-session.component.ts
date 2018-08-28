@@ -29,9 +29,7 @@ export class PortalSessionComponent implements OnInit {
   public activateShow:boolean = false;
 
   constructor(value: LoginPortalComponent) {
-      if(value.getValue === "testBtn"){
-        console.log(value.getValue);
-      } 
+      
    }
 
   ngOnInit() {
