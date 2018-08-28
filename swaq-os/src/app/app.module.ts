@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
+import { LoginPortalComponent } from './login-portal/login-portal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
+    LoginPortalComponent
   ],
   imports: [
     BrowserModule,
