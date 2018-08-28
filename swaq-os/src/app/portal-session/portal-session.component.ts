@@ -25,7 +25,11 @@ import { ActiavtionPortalComponent } from '../actiavtion-portal/actiavtion-porta
 })
 
 export class PortalSessionComponent implements OnInit {
+  
   loginShow:boolean= true;
+  lockShow:boolean=false;
+  passwordShow:boolean=false;
+  activateShow:boolean=false;
   
   constructor() {
       
