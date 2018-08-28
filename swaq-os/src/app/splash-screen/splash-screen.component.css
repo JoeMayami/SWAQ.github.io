@@ -14,6 +14,14 @@
     position: relative;
   }
 
+  .action-updates{
+    font: outline;
+  }
+
+  .action-text{
+    color: black;
+  }
+
 
 
   
