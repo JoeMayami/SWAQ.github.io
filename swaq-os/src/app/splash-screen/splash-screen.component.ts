@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActionData } from '../actionData';
 import { trigger, transition, animate, style } from '@angular/animations'
+import { ActionData } from '../actionData';
+
 
 
 
@@ -9,7 +10,7 @@ import { trigger, transition, animate, style } from '@angular/animations'
   templateUrl: './splash-screen.component.html',
   styleUrls: ['./splash-screen.component.css'],
   animations: [
-    trigger('slideInOut', [
+    trigger('fade', [
       transition(':enter', [
         style({transform: 'translateY(-100%)'}),
         animate('200ms ease-in', style({transform: 'translateY(0%)'}))
@@ -21,9 +22,12 @@ import { trigger, transition, animate, style } from '@angular/animations'
   ]
 })
 export class SplashScreenComponent implements OnInit {
+ 
+data = ActionData;
 
-  data = ActionData;
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }
