@@ -30,11 +30,8 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserAnimationsModule,
     MatCardModule,
     CustomMaterialModule,
-<<<<<<< HEAD
     AppRoutingModule,
 
-=======
->>>>>>> 680722fe83cac2fcbaf1595d328a474ff3179b86
   ],
 
   providers: [

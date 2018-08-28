@@ -11,10 +11,6 @@ disValue;
 
 constructor(getVaule: LoginPortalComponent) {
 
-    this.disValue = getVaule.onClick(event)
 }
-
-
-
 
 }
