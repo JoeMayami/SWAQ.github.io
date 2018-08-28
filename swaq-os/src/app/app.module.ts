@@ -8,18 +8,20 @@ import { CustomMaterialModule } from './custom-module.module';
 import { LoginPortalComponent } from './login-portal/login-portal.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
-    LoginPortalComponent
+    LoginPortalComponent,
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
-    CustomMaterialModule
-    
+    CustomMaterialModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

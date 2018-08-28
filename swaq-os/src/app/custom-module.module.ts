@@ -1,10 +1,18 @@
+import { MatGridListModule } from '@angular/material/grid-list';
 
-import {MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule, MatIconModule } from '@angular/material';
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
+
 
 @NgModule({
-  imports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule],
-  exports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule],
+  // tslint:disable-next-line:max-line-length
+  imports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule, MatFormFieldModule, MatInputModule, MatIconModule, MatGridListModule ],
+  // tslint:disable-next-line:max-line-length
+  exports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule, MatFormFieldModule, MatInputModule, MatIconModule, MatGridListModule ],
 })
 export class CustomMaterialModule {
     // ...

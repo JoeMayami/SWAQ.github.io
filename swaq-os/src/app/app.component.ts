@@ -1,6 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';  
 import { LoginPortalComponent } from './login-portal/login-portal.component';
+import { MatInputModule } from '@angular/material/input';
+import { trigger, transition, animate, style } from '@angular/animations';
+
 
 // @NgModule decorator with its metadata
 @NgModule({

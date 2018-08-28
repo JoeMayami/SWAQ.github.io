@@ -1,0 +1,49 @@
+body{
+    font-weight: lighter;
+}
+
+
+
+example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+#loginPortal {
+      height: 100%;
+  display: grid;
+}
+
+#sublogPortal{
+margin: auto;
+  position: relative;
+
+}
+
+#iconRight{
+    position: relative;
+      margin-left: 70%;
+      background-color: #0078D7;
+}
+
+.textcenter{
+    text-align: center;   
+}
+
+.mt-4 {
+    padding-top: 200px;
+}
+
+#para {
+
+    display:inline;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: -40%;
+}

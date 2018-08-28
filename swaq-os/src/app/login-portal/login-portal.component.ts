@@ -1,6 +1,11 @@
+import { CustomMaterialModule } from './../custom-module.module';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from '../app.component';
+
+
+
+
 
 @Component({
   selector: 'app-login-portal',
@@ -12,6 +17,7 @@ import { AppComponent } from '../app.component';
   declarations: [LoginPortalComponent]
 
 })
+ 
 export class LoginPortalComponent implements OnInit {
 
 
@@ -21,3 +27,7 @@ export class LoginPortalComponent implements OnInit {
   }
 
 }
+
+
+
+
