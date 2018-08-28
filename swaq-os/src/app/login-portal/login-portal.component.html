@@ -16,7 +16,7 @@
     <mat-grid-list cols="2" rowHeight="2:1">
 
         <mat-grid-tile colspan="1" rowspan="1">
-            <p id="para"> Forget Password</p>
+            <p id="para"><a  (click)="onClickForget()" id="Forget"> Forget Password </a></p>
         </mat-grid-tile>
 
         <mat-grid-tile colspan="1" rowspan="1">
@@ -34,7 +34,7 @@
      
 
     <mat-grid-tile-footer rowspan="1">
-        <p class="textcenter mt-4"><a href="#"> Member ? Activate with token ID </a> </p>
+        <p class="textcenter mt-4"><a  (click)="onClickAct()" id="Activate"> Member ? Activate with token ID </a> </p>
       
     </mat-grid-tile-footer>
     

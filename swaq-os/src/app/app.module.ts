@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
@@ -18,7 +19,6 @@ import { ResetPasswordPortalComponent } from './reset-password-portal/reset-pass
     AppComponent,
     SplashScreenComponent,
     LoginPortalComponent,
-
     PortalSessionComponent,
     LockScreenComponent,
     ActiavtionPortalComponent,
@@ -29,10 +29,10 @@ import { ResetPasswordPortalComponent } from './reset-password-portal/reset-pass
     BrowserAnimationsModule,
     MatCardModule,
     CustomMaterialModule,
-
   ],
+
   providers: [
-    LoginPortalComponent
+    
   ],
   bootstrap: [AppComponent]
 })
