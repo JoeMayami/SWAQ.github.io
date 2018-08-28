@@ -10,14 +10,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 
 export class LoginPortalComponent implements OnInit {
 
-  onClick(event){
-    console.log(event);
-    console.log(event.srcElement.attributes.id);
-    var idAttr = event.srcElement.attributes.id;
-    var value = idAttr.nodeValue;
-    console.log(value);
-        
-  }
+  
 
   constructor() { 
     

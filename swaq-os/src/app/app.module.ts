@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
@@ -19,7 +20,6 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     SplashScreenComponent,
     LoginPortalComponent,
-
     PortalSessionComponent,
     LockScreenComponent,
     ActiavtionPortalComponent,
@@ -30,11 +30,15 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserAnimationsModule,
     MatCardModule,
     CustomMaterialModule,
+<<<<<<< HEAD
     AppRoutingModule,
 
+=======
+>>>>>>> 680722fe83cac2fcbaf1595d328a474ff3179b86
   ],
+
   providers: [
-    LoginPortalComponent
+    
   ],
   bootstrap: [AppComponent]
 })
