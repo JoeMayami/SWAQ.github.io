@@ -2,8 +2,16 @@
     max-width: 100%;
     height: 100%;
     margin: 10px;
-    
-   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #load {
+    height: 100%;
+    margin: auto;
+    display: grid;
+    position: relative;
   }
 
 
