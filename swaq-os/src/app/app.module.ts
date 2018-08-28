@@ -18,14 +18,11 @@ import { ResetPasswordPortalComponent } from './reset-password-portal/reset-pass
     AppComponent,
     SplashScreenComponent,
     LoginPortalComponent,
-<<<<<<< HEAD
 
-=======
     PortalSessionComponent,
     LockScreenComponent,
     ActiavtionPortalComponent,
     ResetPasswordPortalComponent
->>>>>>> eb01b2cf0905bd9bfad3ac560d70cdfd0f8dee24
   ],
   imports: [
     BrowserModule,
