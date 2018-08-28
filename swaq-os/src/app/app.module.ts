@@ -10,6 +10,7 @@ import { PortalSessionComponent } from './portal-session/portal-session.componen
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal.component';
 import { ResetPasswordPortalComponent } from './reset-password-portal/reset-password-portal.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 
@@ -29,6 +30,7 @@ import { ResetPasswordPortalComponent } from './reset-password-portal/reset-pass
     BrowserAnimationsModule,
     MatCardModule,
     CustomMaterialModule,
+    AppRoutingModule,
 
   ],
   providers: [
