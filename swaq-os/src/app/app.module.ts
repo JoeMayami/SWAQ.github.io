@@ -31,6 +31,18 @@ import { AppRoutingModule } from './/app-routing.module';
     MatCardModule,
     CustomMaterialModule,
     AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '', component: AppComponent},
+      {path: '', component: SplashScreenComponent},
+      {path: '', component: LoginPortalComponent},
+      {path: '', component: PortalSessionComponent},
+      {path: '', component: LockScreenComponent},
+      {path: '', component: ActiavtionPortalComponent},
+      {path: '', component: ResetPasswordPortalComponent},
+
+
+
+    ])
 
   ],
 
