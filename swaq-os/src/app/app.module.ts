@@ -6,6 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
 import { LoginPortalComponent } from './login-portal/login-portal.component';
+import { PortalSessionComponent } from './portal-session/portal-session.component';
+import { LockScreenComponent } from './lock-screen/lock-screen.component';
+import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal.component';
+import { ResetPasswordPortalComponent } from './reset-password-portal/reset-password-portal.component';
 
 
 
@@ -14,7 +18,14 @@ import { LoginPortalComponent } from './login-portal/login-portal.component';
     AppComponent,
     SplashScreenComponent,
     LoginPortalComponent,
+<<<<<<< HEAD
 
+=======
+    PortalSessionComponent,
+    LockScreenComponent,
+    ActiavtionPortalComponent,
+    ResetPasswordPortalComponent
+>>>>>>> eb01b2cf0905bd9bfad3ac560d70cdfd0f8dee24
   ],
   imports: [
     BrowserModule,
@@ -23,7 +34,9 @@ import { LoginPortalComponent } from './login-portal/login-portal.component';
     CustomMaterialModule,
 
   ],
-  providers: [],
+  providers: [
+    LoginPortalComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,10 +2,13 @@ import { CustomMaterialModule } from './../custom-module.module';
 import { Component, OnInit, NgModule } from '@angular/core';
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> eb01b2cf0905bd9bfad3ac560d70cdfd0f8dee24
 
 @Component({
   selector: 'app-login-portal',
@@ -14,8 +17,11 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 })
  
+=======
+>>>>>>> eb01b2cf0905bd9bfad3ac560d70cdfd0f8dee24
 =======
 >>>>>>> eb01b2cf0905bd9bfad3ac560d70cdfd0f8dee24
 export class LoginPortalComponent implements OnInit {
