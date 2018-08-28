@@ -29,7 +29,9 @@ import { ResetPasswordPortalComponent } from './reset-password-portal/reset-pass
     CustomMaterialModule
     
   ],
-  providers: [],
+  providers: [
+    LoginPortalComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

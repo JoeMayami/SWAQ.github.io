@@ -22,13 +22,17 @@ import { ActiavtionPortalComponent } from '../actiavtion-portal/actiavtion-porta
 })
 
 export class PortalSessionComponent implements OnInit {
-
+  public checkValue;
   public loginShow:boolean = true;
   public lockShow:boolean = false;
   public passwordShow:boolean = false;
   public activateShow:boolean = false;
 
-  constructor() { }
+  constructor(value: LoginPortalComponent) {
+      if(value.getValue === "testBtn"){
+        console.log(value.getValue);
+      } 
+   }
 
   ngOnInit() {
   }

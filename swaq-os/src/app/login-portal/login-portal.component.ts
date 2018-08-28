@@ -10,9 +10,9 @@ import { Component, OnInit, NgModule } from '@angular/core';
 
 export class LoginPortalComponent implements OnInit {
 
-
   constructor() { }
 
+  
   ngOnInit() {
   }
 
