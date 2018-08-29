@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
+import { CustomMaterialModule } from '../custom-module.module';
 
 @Component({
   selector: 'app-sigup-portal',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigupPortalComponent implements OnInit {
 
-  constructor() { }
+  public phoneLen;
+  iconValue = 'phone';
+
+  constructor() {
+    this.phoneLen.valueChanges.subscribe((val) => {
+      this.phoneLen = val.toString().lenght;
+      console.log(this.phoneLen);
+    });
+  }
 
   ngOnInit() {
   }
