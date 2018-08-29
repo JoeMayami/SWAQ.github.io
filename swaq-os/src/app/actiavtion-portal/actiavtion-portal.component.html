@@ -23,7 +23,7 @@
                 <mat-grid-list cols="2" rowHeight="2:1">
 
                     <mat-grid-tile colspan="1" rowspan="1">
-                        <p id="para" routerLink="reset"> Forget Password</p>
+                        <a id="para" [routerLink]="reset"> Forget Password</a>
                     </mat-grid-tile>
 
                     <mat-grid-tile colspan="1" rowspan="1">
@@ -41,7 +41,7 @@
 
 
                 <mat-grid-tile-footer rowspan="1">
-                    <p class="textcenter mt-4"><a [routerLink]="activate"> Member ? Activate with token ID </a> </p>
+                    <p class="textcenter mt-4"><a [routerLink]="login"> Already Remember Password ? Login </a> </p>
 
                 </mat-grid-tile-footer>
 
