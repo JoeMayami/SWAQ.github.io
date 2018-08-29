@@ -9,6 +9,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -19,10 +21,10 @@ import { MatPaginatorModule } from '@angular/material';
 @NgModule({
   imports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule, MatInputModule, 
     MatGridListModule, MatIconModule, MatSidenavModule, MatFormFieldModule, MatRadioModule,
-    MatTableModule, MatPaginatorModule],
+    MatTableModule, MatPaginatorModule, MatSelectModule],
   exports: [MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule, MatInputModule, 
     MatGridListModule, MatIconModule, MatSidenavModule, MatFormFieldModule, MatRadioModule,
-    MatTableModule, MatPaginatorModule ],
+    MatTableModule, MatPaginatorModule, MatSelectModule ],
 })
 export class CustomMaterialModule {
     // ...

@@ -1,3 +1,35 @@
-<p>
-  add-user works!
-</p>
+<mat-grid-list cols="1" rowHeight="18:1"  >
+
+    <form class="example-form" >
+      
+  <mat-grid-tile>
+         <mat-form-field class="example-full-width">
+           <input matInput placeholder="Email" value="example@example.com">
+         </mat-form-field>
+  
+       
+  </mat-grid-tile  >
+  <mat-grid-tile>
+      <mat-form-field class="example-full-width">
+          <mat-select placeholder="User Role">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+  </mat-grid-tile>
+  <mat-grid-tile  >
+  <span>  <button mat-icon-button  class="float-right">
+           <mat-icon aria-label="Example icon-button with arrow-icon" class="icon" routerLink="desktop-screen">arrow_forward</mat-icon>
+         </button>
+       </span>
+  
+  </mat-grid-tile>
+ 
+       
+  </form>
+  
+  
+  </mat-grid-list>
+  

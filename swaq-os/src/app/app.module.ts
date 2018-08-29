@@ -23,6 +23,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ContactInformationComponent } from './contact-information/contact-information.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
  
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AddUserComponent } from './add-user/add-user.component';
     BasicInformationComponent,
     ContactInformationComponent,
     UserListComponent,
-    AddUserComponent
+    AddUserComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +66,7 @@ import { AddUserComponent } from './add-user/add-user.component';
       {path: 'profile-dashboard', component: ProfileDashboardComponent},
       {path: 'admin-view', component: AdminViewComponent},
       {path: 'user-list', component: UserListComponent},
+      {path: 'add-user', component: AddUserComponent},
     
 
 
