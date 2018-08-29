@@ -56,8 +56,6 @@ import { BasicInformationComponent } from './basic-information/basic-information
       {path: 'profile-dashboard', component: ProfileDashboardComponent},
       {path: 'admin-view', component: AdminViewComponent},
     
-
-
     ]),
 
   ],
