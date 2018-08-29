@@ -13,6 +13,7 @@ import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal
 import { ResetPasswordPortalComponent } from './reset-password-portal/reset-password-portal.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.component';
+import { DesktopScreenComponent } from './desktop-screen/desktop-screen.component';
 
 
 
@@ -25,7 +26,8 @@ import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.co
     LockScreenComponent,
     ActiavtionPortalComponent,
     ResetPasswordPortalComponent,
-    DashboardPortalComponent
+    DashboardPortalComponent,
+    DesktopScreenComponent
   ],
   imports: [
     BrowserModule,

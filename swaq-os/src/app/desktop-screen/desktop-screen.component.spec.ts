@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ActiavtionPortalComponent } from './actiavtion-portal.component';
 
+import { DesktopScreenComponent } from './desktop-screen.component';
 
-describe('ActiavtionPortalComponent', () => {
-  let component: ActiavtionPortalComponent;
-  let fixture: ComponentFixture<ActiavtionPortalComponent>;
+describe('DesktopScreenComponent', () => {
+  let component: DesktopScreenComponent;
+  let fixture: ComponentFixture<DesktopScreenComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActiavtionPortalComponent ]
+      declarations: [ DesktopScreenComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActiavtionPortalComponent);
+    fixture = TestBed.createComponent(DesktopScreenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

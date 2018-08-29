@@ -1,63 +1,41 @@
-<div id="loginPortal">
-    <div id="sublogPortal">
+<mat-grid-list cols="1" rowHeight="18:1"  >
 
-        <form class="example-form">
-            <mat-grid-list cols="1" rowHeight="2:1">
-
+        <form class="example-form" >
+     <mat-grid-tile>
+        <mat-icon class="icon">vpn_key</mat-icon>
+     
+      
+           
+     </mat-grid-tile  >
+     <mat-grid-tile>
+         <mat-form-field class="example-full-width">
+             <input matInput placeholder="Enter token" value="thisismytokenidnumber" type="password">
+           </mat-form-field>
+     </mat-grid-tile>
+     <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email" value="Email" type="example@example.com">
+              </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
                 <mat-form-field class="example-full-width">
-                    <input matInput placeholder="License key">
-                </mat-form-field>
-
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Email">
-                </mat-form-field>
-
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Password" type="password">
-                </mat-form-field>
-
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Role" type="text" readonly>
-                </mat-form-field>
-
-                <mat-grid-list cols="2" rowHeight="2:1">
-
-                    <mat-grid-tile colspan="1" rowspan="1">
-                        <a id="para" [routerLink]="reset"> Forget Password</a>
-                    </mat-grid-tile>
-
-                    <mat-grid-tile colspan="1" rowspan="1">
-                        <button mat-icon-button id="iconRight">
-                            <mat-icon aria-label="Example icon-button with a arrow_forward icon">arrow_forward</mat-icon>
-                        </button>
-                    </mat-grid-tile>
-
-
-                </mat-grid-list>
-
-
-
-
-
-
-                <mat-grid-tile-footer rowspan="1">
-                    <p class="textcenter mt-4"><a [routerLink]="login"> Already Remember Password ? Login </a> </p>
-
-                </mat-grid-tile-footer>
-
-
-
-
-
-
-
-
-            </mat-grid-list>
-
-        </form>
-
-    </div>
-
-
-</div>
-
+                    <input matInput placeholder="Password" value="password" type="password">
+                  </mat-form-field>
+            </mat-grid-tile>
+     <mat-grid-tile  >
+    <span>  <button mat-icon-button  class="float-right">
+               <mat-icon aria-label="Example icon-button with arrow-icon" class="icon">arrow_forward</mat-icon>
+             </button>
+           </span>
+      
+     </mat-grid-tile>
+    <mat-grid-tile>
+     <p class="caption">Already an active member?<a> Click here to login</a></p>
+    </mat-grid-tile>
+    
+           
+    </form>
+    
+    
+    </mat-grid-list>
+    

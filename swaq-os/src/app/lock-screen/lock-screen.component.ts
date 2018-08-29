@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomMaterialModule } from '../custom-module.module';
 
 @Component({
   selector: 'app-lock-screen',
