@@ -1,0 +1,23 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <mat-icon matSuffix>phone</mat-icon>
+  </mat-form-field>
+
+</div>
+
+<button mat-raised-button color="primary">Register</button>
+
+
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+  <label class="mdl-textfield__label" for="sample4">Phone number...</label>
+  <i class="material-icons">search</i>
+  <span class="mdl-textfield__error">Input is not a number!</span>
+
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+   Register
+  </button>
+</div>
+
