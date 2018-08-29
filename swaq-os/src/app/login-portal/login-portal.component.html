@@ -18,16 +18,16 @@
     </mat-grid-tile>
     <mat-grid-tile  >
 <span>  <button mat-icon-button  class="float-right">
-              <mat-icon aria-label="Example icon-button with arrow-icon" class="icon">arrow_forward</mat-icon>
+              <mat-icon aria-label="Example icon-button with arrow-icon" class="icon" routerLink="desktop-screen">arrow_forward</mat-icon>
             </button>
           </span>
      
     </mat-grid-tile>
   <mat-grid-tile>
-    <p class="caption">Forgot password?<a> Click here to reset</a></p>
+    <span class="caption">Forgot password?<a  routerLink="/reset-password"> Click here to reset</a></span>
   </mat-grid-tile>
     <mat-grid-tile >
-        <p class="button">New user?<a> Activate account with token</a></p>
+        <p class="button">New user?<a routerLink="/activate-account"> Activate account with token</a></p>
     </mat-grid-tile>
           
   </form>

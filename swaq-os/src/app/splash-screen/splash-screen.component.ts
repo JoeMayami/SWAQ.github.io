@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations'
-import { ActionData } from '../actionData';
+import { fadeIn } from '../animate';
+import { RouterLinkActive, Routes, Router } from '@angular/router';
 
 
 
@@ -10,26 +11,40 @@ import { ActionData } from '../actionData';
   templateUrl: './splash-screen.component.html',
   styleUrls: ['./splash-screen.component.css'],
   animations: [
-    trigger('fade', [
-      transition(':enter', [
-        style({transform: 'translateY(-100%)'}),
-        animate('200ms ease-in', style({transform: 'translateY(0%)'}))
-      ]),
-      transition(':leave', [
-        animate('200ms ease-in', style({transform: 'translateY(-100%)'}))
-      ])
-    ])
+    fadeIn
   ]
 })
 export class SplashScreenComponent implements OnInit {
- 
-data = ActionData;
 
-  constructor() {
+    public loadingText: string = 'Loading';
     
-   }
+    public openOrclose:string;
+    private timeSplash = 0;
+    private count = 0;
+    constructor(private nav: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    setInterval(() => {
+        if (this.timeSplash < 16000){
+          this.openOrclose='enter'
+          this.timeSplash += 5000;
+         if(this.count === 5){
+          this.openOrclose='enter'
+           this.count = 0;
+           this.loadingText = "Loading";
+         } else {
+          this.openOrclose='leave'
+           this.loadingText = "";
+           var content:string[]; 
+            content = ["Getting started","Setting up enviroinment","Fetching data","Synchronizing", "Almost done"];
+          this.loadingText += content[this.count] ;
+          this.count++;
+         }
+        } else {
+          this.openOrclose='leave'
+          this.nav.navigate(['/login-portal'], {replaceUrl: true});
+        }
+    }, 5000)
   }
 
 }

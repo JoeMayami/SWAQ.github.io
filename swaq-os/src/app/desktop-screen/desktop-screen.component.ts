@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomMaterialModule } from '../custom-module.module';
 import { trigger, transition, style, animate, state } from '@angular/animations';
-import { fadeIn } from './animate';
+import { fadeIn } from '../animate';
 
 @Component({
   selector: 'app-desktop-screen',

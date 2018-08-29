@@ -1,16 +1,10 @@
 <mat-card class="example-card" >
   <mat-card-content>
     <mat-spinner id="load"
+    @fade
     [strokeWidth]="1"
     ></mat-spinner>
-  <ul>
-<li *ngFor="let action of data">
-<span>{{action.action}}</span>
 
-</li>
-
-  </ul>
-    
-    <div *ngIf="visible" [@slideInOut]>This element will slide up and down when the value of 'visible' changes from true to false and vice versa.</div>
-  </mat-card-content>
+<span class="caption" [@fade]="openOrclose">{{loadingText}}</span>
+</mat-card-content>
 </mat-card>

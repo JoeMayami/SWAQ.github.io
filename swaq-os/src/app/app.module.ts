@@ -1,59 +1,70 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
 import { LoginPortalComponent } from './login-portal/login-portal.component';
-import { PortalSessionComponent } from './portal-session/portal-session.component';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal.component';
 import { ResetPasswordPortalComponent } from './reset-password-portal/reset-password-portal.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.component';
+import { AdminViewComponent } from './admin-view/admin-view.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule, MatToolbarModule} from '@angular/material';
 import { DesktopScreenComponent } from './desktop-screen/desktop-screen.component';
-
-
-
+import { ProfileDashboardComponent } from './profile-dashboard/profile-dashboard.component';
+import { QuickAccessDashboardComponent } from './quick-access-dashboard/quick-access-dashboard.component';
+import { BasicInformationComponent } from './basic-information/basic-information.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
     LoginPortalComponent,
-    PortalSessionComponent,
     LockScreenComponent,
     ActiavtionPortalComponent,
     ResetPasswordPortalComponent,
     DashboardPortalComponent,
-    DesktopScreenComponent
+    AdminViewComponent,
+    DesktopScreenComponent,
+    ProfileDashboardComponent,
+    QuickAccessDashboardComponent,
+    BasicInformationComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
+    FormsModule,
     CustomMaterialModule,
-    AppRoutingModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatToolbarModule,
     RouterModule.forRoot([
-      {path: '', component: AppComponent},
+      {path: '', redirectTo:'/splash', pathMatch:'full'},
       {path: 'splash', component: SplashScreenComponent},
-      {path: 'portal', component: PortalSessionComponent},
       {path: 'login-portal', component: LoginPortalComponent},
       {path: 'lock-screen', component: LockScreenComponent},
-      {path: 'actiave-account', component: ActiavtionPortalComponent},
+      {path: 'activate-account', component: ActiavtionPortalComponent},
       {path: 'reset-password', component: ResetPasswordPortalComponent},
       {path: 'desktop-screen', component: DesktopScreenComponent},
+      {path: 'dashboard-screen', component: DashboardPortalComponent},
+      {path: 'profile-dashboard', component: ProfileDashboardComponent},
+      {path: 'admin-view', component: AdminViewComponent},
+    
 
 
     ]),
 
-   
   ],
+  providers: [ ],
 
-  providers: [
-    
-  ],
   bootstrap: [AppComponent]
+
 })
+
 export class AppModule { }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortalSessionComponent } from './portal-session.component';
+import { AdminViewComponent } from './admin-view.component';
 
-describe('PortalSessionComponent', () => {
-  let component: PortalSessionComponent;
-  let fixture: ComponentFixture<PortalSessionComponent>;
+describe('AdminViewComponent', () => {
+  let component: AdminViewComponent;
+  let fixture: ComponentFixture<AdminViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PortalSessionComponent ]
+      declarations: [ AdminViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PortalSessionComponent);
+    fixture = TestBed.createComponent(AdminViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
