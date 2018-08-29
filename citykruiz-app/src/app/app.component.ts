@@ -1,4 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { RouterModule, Router } from '@angular/router';
+import { CommonModule } from '@angular/common'; 
+
+
+// @NgModule decorator with its metadata
+@NgModule({
+  imports: [CommonModule],
+  declarations: [AppComponent]
+})
 
 @Component({
   selector: 'app-root',
@@ -7,4 +16,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'citykruiz-app';
+
+  constructor(private router: Router){
+
+  }
 }
