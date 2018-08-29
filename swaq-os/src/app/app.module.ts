@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { CustomMaterialModule } from './custom-module.module';
@@ -17,8 +17,7 @@ import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.co
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule, MatToolbarModule} from '@angular/material';
-
-
+import { DesktopScreenComponent } from './desktop-screen/desktop-screen.component';
  
 @NgModule({
   declarations: [
@@ -30,7 +29,7 @@ import { MatTooltipModule, MatToolbarModule} from '@angular/material';
     ActiavtionPortalComponent,
     ResetPasswordPortalComponent,
     DashboardPortalComponent,
-    AdminViewComponent ],
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

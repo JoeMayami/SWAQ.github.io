@@ -1,58 +1,37 @@
+<mat-grid-list cols="1" rowHeight="18:1"  >
 
-<div id="loginPortal"> 
-  <div id ="sublogPortal">
-
-<form class="example-form">
-  <mat-grid-list cols="1" rowHeight="2:1">
-
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Email">
-    </mat-form-field>
+       <form class="example-form" >
+          <mat-grid-tile>
+              <mat-icon class="icon">account_box</mat-icon>
+           </mat-grid-tile  >
+    <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" value="example@example.com">
+            </mat-form-field>
     
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Password" type="password">
-    </mat-form-field>
-   
-    <mat-grid-list cols="2" rowHeight="2:1">
-
-        <mat-grid-tile colspan="1" rowspan="1">
-           
-            <p id="para"><a  routerLink="/reset-password" id="Forget"> Forget Password </a></p>
-        </mat-grid-tile>
-
-        <mat-grid-tile colspan="1" rowspan="1">
-          <button mat-icon-button id="iconRight">
-            <mat-icon aria-label="Example icon-button with a arrow_forward icon">arrow_forward</mat-icon>
-          </button>
-        </mat-grid-tile>
-
-
-    </mat-grid-list>
-
-   
-   
-
+          
+    </mat-grid-tile  >
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" value="password" type="password">
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile  >
+<span>  <button mat-icon-button  class="float-right">
+              <mat-icon aria-label="Example icon-button with arrow-icon" class="icon">arrow_forward</mat-icon>
+            </button>
+          </span>
      
+    </mat-grid-tile>
+  <mat-grid-tile>
+    <p class="caption">Forgot password?<a> Click here to reset</a></p>
+  </mat-grid-tile>
+    <mat-grid-tile >
+        <p class="button">New user?<a> Activate account with token</a></p>
+    </mat-grid-tile>
+          
+  </form>
 
-    <mat-grid-tile-footer rowspan="1">
-       
-        <p class="textcenter mt-4"><a  routerLink="/actiave-account" id="Activate"> New Member? Activate with token ID </a> </p>
-      
-    </mat-grid-tile-footer>
-    
-       
-     
-    
-    
-   
-
-
+ 
   </mat-grid-list>
   
-</form>
-
-  </div>
-
-
-</div>
-
