@@ -1,7 +1,6 @@
 import { CustomMaterialModule } from './../custom-module.module';
 import { Component, OnInit, NgModule } from '@angular/core';
 
-
 @Component({
   selector: 'app-login-portal',
   templateUrl: './login-portal.component.html',
@@ -9,14 +8,8 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 
 export class LoginPortalComponent implements OnInit {
-
-  
-
-  constructor() { 
-    
+  constructor() {  
   }
-
-
   ngOnInit() {
   }
 

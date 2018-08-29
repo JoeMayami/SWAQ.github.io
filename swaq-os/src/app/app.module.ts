@@ -39,7 +39,7 @@ import { BasicInformationComponent } from './basic-information/basic-information
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
-    FormsModule,
+    MatSidenavModule,
     CustomMaterialModule,
     MatToolbarModule,
     MatTooltipModule,
