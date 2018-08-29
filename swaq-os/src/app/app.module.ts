@@ -19,6 +19,10 @@ import { DesktopScreenComponent } from './desktop-screen/desktop-screen.componen
 import { ProfileDashboardComponent } from './profile-dashboard/profile-dashboard.component';
 import { QuickAccessDashboardComponent } from './quick-access-dashboard/quick-access-dashboard.component';
 import { BasicInformationComponent } from './basic-information/basic-information.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ContactInformationComponent } from './contact-information/contact-information.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { AddUserComponent } from './add-user/add-user.component';
  
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { BasicInformationComponent } from './basic-information/basic-information
     DesktopScreenComponent,
     ProfileDashboardComponent,
     QuickAccessDashboardComponent,
-    BasicInformationComponent
+    BasicInformationComponent,
+    ContactInformationComponent,
+    UserListComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +51,7 @@ import { BasicInformationComponent } from './basic-information/basic-information
     MatToolbarModule,
     MatTooltipModule,
     MatToolbarModule,
+    MatDatepickerModule,
     RouterModule.forRoot([
       {path: '', redirectTo:'/splash', pathMatch:'full'},
       {path: 'splash', component: SplashScreenComponent},
@@ -55,6 +63,7 @@ import { BasicInformationComponent } from './basic-information/basic-information
       {path: 'dashboard-screen', component: DashboardPortalComponent},
       {path: 'profile-dashboard', component: ProfileDashboardComponent},
       {path: 'admin-view', component: AdminViewComponent},
+      {path: 'user-list', component: UserListComponent},
     
 
 
