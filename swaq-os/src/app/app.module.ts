@@ -67,8 +67,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
       {path: 'admin-view', component: AdminViewComponent},
       {path: 'user-list', component: UserListComponent},
       {path: 'add-user', component: AddUserComponent},
-    
-
 
     ]),
 
