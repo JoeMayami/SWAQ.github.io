@@ -43,11 +43,12 @@ import { DesktopScreenComponent } from './desktop-screen/desktop-screen.componen
       {path: 'lock-screen', component: LockScreenComponent},
       {path: 'actiave-account', component: ActiavtionPortalComponent},
       {path: 'reset-password', component: ResetPasswordPortalComponent},
+      {path: 'desktop-screen', component: DesktopScreenComponent},
 
 
+    ]),
 
-    ])
-
+   
   ],
 
   providers: [
