@@ -1,3 +1,56 @@
-<p>
-  basic-information works!
-</p>
+<mat-grid-list cols="1" rowHeight="24:1"  >
+
+  <form class="example-form" >
+     
+<mat-grid-tile>
+       <mat-form-field class="example-full-width">
+         <input matInput placeholder="First Name" value="John">
+       </mat-form-field>   
+</mat-grid-tile>
+
+<mat-grid-tile>
+ <mat-form-field class="example-full-width">
+   <input matInput placeholder="Last Name" value="Peterson">
+ </mat-form-field>   
+</mat-grid-tile>
+<mat-grid-tile>
+       <mat-form-field class="example-full-width">
+         <input matInput placeholder="Surname" value="Clement">
+       </mat-form-field>   
+</mat-grid-tile>
+<mat-grid-tile>
+ <mat-form-field class="example-full-width">
+   <input matInput placeholder="Nickname" value="@Username">
+ </mat-form-field>   
+</mat-grid-tile>
+
+<mat-grid-tile>
+<section class="example-full-width">
+<label class="example-margin">Gender:</label>
+<mat-radio-group>
+ <mat-radio-button value="Male" class="padding">Male</mat-radio-button>
+ <mat-radio-button value="Female" class="padding">Female</mat-radio-button>
+</mat-radio-group>
+</section>   
+</mat-grid-tile>
+<mat-grid-tile>
+<section class="example-full-width">
+<label class="example-margin">Marital Status:</label>
+<mat-radio-group>
+ <mat-radio-button value="Single" class="padding">Single</mat-radio-button>
+ <mat-radio-button value="Married" class="padding">Married</mat-radio-button>
+ <mat-radio-button value="Divorced" class="padding">Divorced</mat-radio-button>
+</mat-radio-group>
+</section>   
+</mat-grid-tile>
+
+<mat-grid-tile>
+<mat-form-field class="example-full-width">
+<input matInput placeholder="Date of Birth" value="DD/MM/YYYY">
+</mat-form-field>  
+</mat-grid-tile>       
+
+</form>
+
+
+</mat-grid-list>
