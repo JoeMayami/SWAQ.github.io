@@ -1,6 +1,6 @@
+import { AdminViewComponent } from './admin-view/admin-view.component';
 import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.component';
 import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal.component';
-
 import { LoginPortalComponent } from './login-portal/login-portal.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'login', component: LoginPortalComponent },
   { path: 'reset', component: ResetPasswordPortalComponent },
   { path: 'activate', component: ActiavtionPortalComponent},
-  {path: 'dashboard', component: DashboardPortalComponent }
+  {path: 'dashboard', component: DashboardPortalComponent },
+  { path: 'mainView', component: AdminViewComponent }
 ];
 
 @NgModule({

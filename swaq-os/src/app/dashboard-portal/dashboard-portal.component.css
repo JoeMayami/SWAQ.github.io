@@ -1,2 +1,30 @@
 
-body { margin: 0; font-family: 'Roboto', sans-serif;  display: grid; font-weight: lighter;}
+body { margin: 0; font-family: 'Roboto', sans-serif;  font-weight: lighter;}
+
+h5{
+    font-weight: 400px;
+    font-size: 14px;
+    display: inline;
+}
+
+.icon{
+    font-size: 1.5em;
+    color:#00A1F1  !important;
+    /* text-shadow: 1px 1px 1px #ccc; */
+    
+}
+
+.full{
+    width: 50%;
+}
+mat-card:hover{
+
+    border: 1px solid;
+    border-color: #2196f3 !important;
+}
+
+mat-form-field:hover {
+
+    border-color:#00A1F1  !important;
+     
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,9 +14,12 @@ import { ActiavtionPortalComponent } from './actiavtion-portal/actiavtion-portal
 import { ResetPasswordPortalComponent } from './reset-password-portal/reset-password-portal.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.component';
+import { AdminViewComponent } from './admin-view/admin-view.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule, MatToolbarModule} from '@angular/material';
 
 
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,14 +29,17 @@ import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.co
     LockScreenComponent,
     ActiavtionPortalComponent,
     ResetPasswordPortalComponent,
-    DashboardPortalComponent
-  ],
+    DashboardPortalComponent,
+    AdminViewComponent ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     CustomMaterialModule,
     AppRoutingModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatToolbarModule,
     RouterModule.forRoot([
       {path: '', component: AppComponent},
       {path: 'splash', component: SplashScreenComponent},
@@ -41,16 +48,10 @@ import { DashboardPortalComponent } from './dashboard-portal/dashboard-portal.co
       {path: 'lock-screen', component: LockScreenComponent},
       {path: 'actiave-account', component: ActiavtionPortalComponent},
       {path: 'reset-password', component: ResetPasswordPortalComponent},
-
-
-
     ])
 
   ],
-
-  providers: [
-    
-  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
